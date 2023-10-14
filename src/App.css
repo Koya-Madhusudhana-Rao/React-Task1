@@ -1,30 +1,48 @@
-#id1{
-  box-shadow: 0 0 5px gainsboro,0 0 5px gainsboro;
-  height:300px;
-  width:500px;
-  border:1px solid;
-  margin:auto;
-  padding: 10px;
-  border:1px gainsboro;
-  margin-top:50px;
+.button{
+  background-color: #35ab66;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
-#id2{
-  font-size: 35px;
-  margin:auto;
-  text-align: center;
+.color-square{
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
 }
-.class1{
-  height:100px;
-  width:460px;
-  border:2px solid black;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 5px;
-  padding:10px;
-  margin-top:20px;
-  margin-left:10px;
+.selected-color{
+  margin-top: 10px;
+  font-weight: bold;
 }
-#id3{
-  margin-left:10px;
+.color-list{
+  display: flex;
+  overflow-x: auto; 
+  justify-content: center;
+}
+.color-square{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px; 
+  border: 1px solid #ccc;
+  cursor: pointer;
+}  
+.layer1{
+  background-color: rgb(181, 161, 206);
+  margin: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px ;
+}
+.layer2{
+  margin: 30px;
+  background-color: pink;
+  padding-top: 165px;
+  padding-bottom: 165px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
 }

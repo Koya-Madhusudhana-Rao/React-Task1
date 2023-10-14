@@ -1,28 +1,21 @@
-import {useState,useEffect} from 'react';
-import './App.css';
-function App() {
-  const [text,setText]=useState('');
-  const [wordCount,setWordCount]=useState(0);
-  const changeHandler = (event) => {
-    setText(event.target.value);
-  };
-  useEffect(() => {
-    const words=text.split(' ');
-    let wordCount=0;
-    words.forEach((word) => {
-      if(word.trim() !== ''){
-        wordCount++;
-      }
-    });
-    setWordCount(wordCount);
-  }, [text]);
+import React from 'react';
+import ColorPicker from './ColorPicker';
+import './Colorpicker.css';
+const App = () => {
+  const colors = [
+    'red','lime','blue','yellow','magenta','cyan','orange','purple','pink','green','tomato','turquoise','brown','orange','steelblue','gold',
+  ];
   return (
-    <div id="id1">
-      <p id="id2"><b>Responsive Paragraph Word</b></p>
-      <p id="id2"><b>Counter</b></p>
-      <textarea className="class1" value={text} onChange={changeHandler}></textarea>
-      <p id="id3">Word Count: {wordCount}</p>
-    </div>
+    <center>
+      <div className='layer1'>
+        <h1>Color Picker</h1>
+        <div className='layer2'>
+          <div id="id1">
+            <ColorPicker colors={colors}/>
+          </div>
+        </div>
+      </div>
+    </center>
   );
-}
+};
 export default App;
